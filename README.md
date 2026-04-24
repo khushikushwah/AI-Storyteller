@@ -1,118 +1,104 @@
-# Welcome to AI Storyteller
+# AI Storyteller
 
-## 📱 Live Demo & Demo Video
+## Project Overview
+AI Storyteller is an innovative application designed to generate and narrate engaging stories using artificial intelligence. This project aims to combine the power of advanced machine learning algorithms with creative storytelling to provide users with a unique and interactive experience.
 
-- **Live Demo:** [AI Storyteller](https://app-axrbfd6d08ht.appmedo.com)
-- **Video Walkthrough:** [YouTube Demo](https://youtu.be/OzlNdiQz5q0)
-
-## 🎯 Project Overview
-
-AI Storyteller is a modern web application that harnesses the power of artificial intelligence to generate creative and engaging stories. Built with cutting-edge technologies, it provides users with an intuitive platform to explore AI-driven storytelling capabilities.
-
-## ✨ Features
-
-- **AI-Powered Story Generation** - Generate creative stories using advanced AI models
-- **User-Friendly Interface** - Intuitive and responsive UI built with React
-- **Database Integration** - Persistent data storage with Supabase
-- **Real-time Updates** - Seamless real-time interactions
-- **TypeScript Support** - Type-safe development experience
-- **Fast Development** - Vite for rapid development and optimized builds
+## Features
+- **Story Generation**: Create exciting stories based on user-defined parameters.
+- **User Interaction**: Engage with the AI to customize story paths.
+- **Multilingual Support**: Stories can be generated in various languages.
+- **Save and Share**: Users can save their favorite stories and share them with friends.
 
 ## Tech Stack
-
-- **Frontend:** Vite, TypeScript, React
-- **Backend/Database:** Supabase
-- **Build Tool:** Vite
-- **Styling:** PostCSS
+- **Frontend**: React.js
+- **Backend**: Node.js, Express.js
+- **Database**: Supabase
+- **Deployment**: Vercel
 
 ## Project Directory
-
 ```
-├── README.md # Documentation
-├── components.json # Component library configuration
-├── index.html # Entry file
-├── package.json # Package management
-├── postcss.config.js # PostCSS configuration
-├── public # Static resources directory
-│   ├── favicon.png # Icon
-│   └── images # Image resources
-├── src # Source code directory
-│   ├── App.tsx # Entry file
-│   ├── components # Components directory
-│   ├── context # Context directory
-│   ├── db # Database configuration directory
-│   ├── hooks # Common hooks directory
-│   ├── index.css # Global styles
-│   ├── layout # Layout directory
-│   ├── lib # Utility library directory
-│   ├── main.tsx # Entry file
-│   ├── routes.tsx # Routing configuration
-│   ├── pages # Pages directory
-│   ├── services # Database interaction directory
-│   ├── types # Type definitions directory
-├── tsconfig.app.json # TypeScript frontend configuration file
-├── tsconfig.json # TypeScript configuration file
-├── tsconfig.node.json # TypeScript Node.js configuration file
-└── vite.config.ts # Vite configuration file
+AI-Storyteller/
+├── client/         # Frontend code
+├── server/         # Backend code
+├── database/       # Database configurations
+└── README.md       # Project documentation
 ```
 
-## 🚀 Development Guidelines
+## Environment Setup
+### For Windows
+1. **Install Node.js**: Download the Windows installer from [Node.js Official Site](https://nodejs.org/) and follow the installation instructions.
+2. **Clone the Repository**:  
+   ```bash
+   git clone https://github.com/khushikushwah/AI-Storyteller.git
+   cd AI-Storyteller
+   ```
+3. **Install Dependencies**:  
+   ```bash
+   npm install
+   ```
+4. **Run the Application**:  
+   ```bash
+   npm start
+   ```
 
-### How to edit code locally?
+### For macOS
+1. **Install Node.js**: You can install Node.js via [Homebrew](https://brew.sh/) by running:  
+   ```bash
+   brew install node
+   ```
+2. **Clone the Repository**:  
+   ```bash
+   git clone https://github.com/khushikushwah/AI-Storyteller.git
+   cd AI-Storyteller
+   ```
+3. **Install Dependencies**:  
+   ```bash
+   npm install
+   ```
+4. **Run the Application**:  
+   ```bash
+   npm start
+   ```
 
-You can choose [VSCode](https://code.visualstudio.com/Download) or any IDE you prefer. The only requirement is to have Node.js and npm installed.
+## Supabase Configuration
+1. **Create a Supabase Account**: Go to [Supabase](https://supabase.io/) and create an account.
+2. **Create a New Project**: Follow the prompts to create a new project.
+3. **Database Settings**: Configure your database settings and take note of the API keys needed for your application.
+4. **Connect Your Application**: Update your environment variables with the Supabase credentials.
 
-### Environment Requirements
+## Development Setup
+1. **Ensure Node.js is installed**: Make sure you have Node.js installed as described above.
+2. **Run Tests**: To run the test suite, use the command:  
+   ```bash
+   npm test
+   ```
+3. **Linting**: Ensure code quality by running a linter:  
+   ```bash
+   npm run lint
+   ```
 
-```
-# Node.js ≥ 20
-# npm ≥ 10
-Example:
-# node -v   # v20.18.3
-# npm -v    # 10.8.2
-```
+## Troubleshooting
+- **Issue: Application not starting**: Ensure all dependencies are installed and check for errors in the terminal.
+- **Issue: Database connection error**: Verify your Supabase credentials are correct and your application is properly configured to connect.
 
-### Installing Node.js on Windows
+## Deployment
+The application is deployed on Vercel. To deploy your own instance, connect your GitHub repository on Vercel and follow the deployment prompts.
 
-```
-# Step 1: Visit the Node.js official website: https://nodejs.org/, click download. The website will automatically suggest a suitable version (32-bit or 64-bit) for your system.
-# Step 2: Run the installer: Double-click the downloaded installer to run it.
-# Step 3: Complete the installation: Follow the installation wizard to complete the process.
-# Step 4: Verify installation: Open Command Prompt (cmd) or your IDE terminal, and type `node -v` and `npm -v` to check if Node.js and npm are installed correctly.
-```
+## Contributing
+1. **Fork the Repo**: Click on the fork button to create a copy of the repository.
+2. **Create a Branch**: Create a new branch for your feature or bug fix:  
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+3. **Make Changes**: Implement your changes and commit them.  
+   ```bash
+   git commit -m "Add a descriptive commit message"
+   ```
+4. **Push to Branch**:  
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+5. **Create a Pull Request**: Submit your changes for review.
 
-### Installing Node.js on macOS
-
-```
-# Step 1: Using Homebrew (Recommended method): Open Terminal. Type the command `brew install node` and press Enter. If Homebrew is not installed, you need to install it first by running the following command:
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-# Alternatively, use the official installer: Visit the Node.js official website. Download the macOS .pkg installer. Open the downloaded .pkg file and follow the prompts to complete the installation.
-# Step 2: Verify installation: Open Command Prompt (cmd) or your IDE terminal, and type `node -v` and `npm -v` to check if Node.js and npm are installed correctly.
-```
-
-### Getting Started - Setup Instructions
-
-```
-# Step 1: Download the code package
-# Step 2: Extract the code package
-# Step 3: Open the code package with your IDE and navigate into the code directory
-# Step 4: In the IDE terminal, run the command to install dependencies: npm i
-# Step 5: In the IDE terminal, run the command to start the development server: npm run dev -- --host 127.0.0.1
-# Step 6: If step 5 failed, try this command to start the development server: npx vite --host 127.0.0.1
-```
-
-### How to develop backend services?
-
-Configure environment variables and install relevant dependencies. If you need to use a database, please use the official version of Supabase.
-
-## 📚 Learn More
-
-For additional help and documentation, please refer to the official Miaoda documentation.
-
-## 📝 License
-
-This project is licensed under the MIT license.
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a pull request or open an issue for any bugs or feature requests.
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
