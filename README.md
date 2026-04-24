@@ -111,7 +111,7 @@ For additional help and documentation, please refer to the official Miaoda docum
 
 ## 📝 License
 
-This project is licensed under the appropriate license. Please check the LICENSE file for more details.
+This project is licensed under the MIT license.
 
 ## 🤝 Contributing
 
