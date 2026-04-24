@@ -1,7 +1,11 @@
 # AI Storyteller
 
 ## Project Overview
-AI Storyteller is an innovative application designed to generate and narrate engaging stories using artificial intelligence. This project aims to combine the power of advanced machine learning algorithms with creative storytelling to provide users with a unique and interactive experience.
+AI Storyteller is an innovative application designed to generate and narrate engaging stories using artificial intelligence. This project aims to combine the power of advanced machine learning algorithms with creative storytelling.
+
+## 🎬 Quick Links
+- **[Live Demo](https://app-axrbfd6d08ht.appmedo.com)** - Try AI Storyteller now!
+- **[Project Video](https://youtu.be/OzlNdiQz5q0)** - Watch our demo walkthrough
 
 ## Features
 - **Story Generation**: Create exciting stories based on user-defined parameters.
