@@ -1,0 +1,154 @@
+/* stylelint-disable */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Montserrat Font */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('https://resource-static.bj.bcebos.com/fonts/Montserrat-VariableFont_wght.woff2') format('woff2');
+  font-display: swap;
+}
+
+/* Minimal Design System - Prioritizing airiness, whitespace, and reading comfort */
+@layer base {
+  :root {
+    --radius: 0.25rem;
+    /* Primary backgrounds - pure white and subtle gray */
+    --background: 0 0% 100%;
+    --secondary-bg: 220 14% 97%;
+    
+    /* Text colors - dark gray instead of pure black */
+    --foreground: 220 13% 9%;
+    --secondary-text: 220 9% 46%;
+    
+    /* Card and surfaces */
+    --card: 0 0% 100%;
+    --card-foreground: 220 13% 9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 13% 9%;
+    
+    /* Primary accent - subtle blue for selected states */
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Secondary - extremely subtle */
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 220 13% 9%;
+    
+    /* Muted - for less prominent content */
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+    
+    /* Accent - very light, low saturation */
+    --accent: 217 20% 95%;
+    --accent-foreground: 220 13% 9%;
+    
+    /* Borders - 1px, subtle */
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    
+    /* Ring for focus states */
+    --ring: 217 91% 60%;
+    
+    /* Destructive */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Sidebar for admin */
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 220 13% 9%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 14% 96%;
+    --sidebar-accent-foreground: 220 13% 9%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217 91% 60%;
+    
+    /* Charts - minimal, linear */
+    --chart-1: 217 91% 60%;
+    --chart-2: 142 76% 36%;
+    --chart-3: 262 83% 58%;
+    --chart-4: 32 95% 44%;
+    --chart-5: 340 82% 52%;
+  }
+
+  .dark {
+    /* Dark mode - inverted with gentle contrast */
+    --background: 220 13% 9%;
+    --secondary-bg: 220 13% 12%;
+    --foreground: 220 14% 96%;
+    --secondary-text: 220 9% 65%;
+    
+    --card: 220 13% 9%;
+    --card-foreground: 220 14% 96%;
+    --popover: 220 13% 9%;
+    --popover-foreground: 220 14% 96%;
+    
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 220 13% 15%;
+    --secondary-foreground: 220 14% 96%;
+    
+    --muted: 220 13% 15%;
+    --muted-foreground: 220 9% 65%;
+    
+    --accent: 220 13% 15%;
+    --accent-foreground: 220 14% 96%;
+    
+    --border: 220 13% 20%;
+    --input: 220 13% 20%;
+    
+    --ring: 217 91% 60%;
+    
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 220 14% 96%;
+    
+    --sidebar-background: 220 13% 9%;
+    --sidebar-foreground: 220 14% 96%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 13% 15%;
+    --sidebar-accent-foreground: 220 14% 96%;
+    --sidebar-border: 220 13% 20%;
+    --sidebar-ring: 217 91% 60%;
+    
+    --chart-1: 217 91% 60%;
+    --chart-2: 142 76% 36%;
+    --chart-3: 262 83% 58%;
+    --chart-4: 32 95% 44%;
+    --chart-5: 340 82% 52%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-montserrat;
+    font-feature-settings: 'kern' 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Minimal button styles - no heavy shadows */
+  button {
+    @apply transition-colors duration-200;
+  }
+}
+
+@layer utilities {
+  /* Utility for highlighted text during narration */
+  .narration-highlight {
+    @apply bg-accent text-accent-foreground;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Minimal card style */
+  .minimal-card {
+    @apply bg-card border border-border;
+  }
+}
